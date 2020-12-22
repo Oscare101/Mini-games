@@ -52,7 +52,7 @@ for (let i = 0; i < brickRows; i++) {
 function drawBall() {
     $.beginPath();
     $.arc(ball.x, ball.y, ball.size, 0, 2 * Math.PI);
-    $.fillStyle = "seagreen";
+    $.fillStyle = "#D00015";
     $.fill();
     $.closePath();
 }
@@ -60,7 +60,7 @@ function drawBall() {
 function drawPaddle() {
     $.beginPath();
     $.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-    $.fillStyle = "steelblue";
+    $.fillStyle = "indianred";
     $.fill();
     $.closePath();
 }
@@ -75,7 +75,7 @@ function drawBricks() {
         col.forEach((brick) => {
             $.beginPath();
             $.rect(brick.x, brick.y, brick.w, brick.h);
-            $.fillStyle = brick.visible ? "indianred" : "transparent";
+            $.fillStyle = brick.visible ? "#6C003D" : "transparent";
             $.fill();
             $.closePath();
         });
